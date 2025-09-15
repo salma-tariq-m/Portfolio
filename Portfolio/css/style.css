@@ -1,0 +1,184 @@
+
+
+body {
+  font-family: Arial, sans-serif;
+  background-color:#1E1E1E;
+  color: white;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+nav h1{
+  font-size:100px ;
+ 
+}
+p{
+  font-size: 21px;
+}
+h1{
+  font-family: 'poppins' sans-serif;
+  font-size: 3rem;
+}
+ span{
+  color: #f77f00;
+}
+
+#about h1{
+  font-weight: bold;
+}
+h1{
+  text-align: center;
+}
+header button{
+  background-color: #f77f00;
+  color: white;
+  border: 1px solid #f77f00;
+  border-radius: 5px;
+}
+#home h1 {
+  text-align: start
+}
+
+h1::first-letter{
+  text-transform: uppercase;
+
+  
+}
+#btn:hover{
+  background-color: cadetblue;
+}
+.navbar-brand, .nav-link, .btn-primary {
+    color: #f77f00
+}
+.btn-primary {
+    background-color: #f77f00;
+    border-color: #f77f00;
+    color: #fff;
+}
+
+#monImg{
+  width:400px;
+height: 350px;
+border-radius: 50%;
+
+}
+#home{
+width: 1400;
+height: 617.2402954101562;
+}
+#containerImg{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#about{
+width: 1470;
+height: 675;
+top: 1004px;
+left: 200px;
+opacity: 1;
+
+}
+#services{
+ width: 1413;
+height: 584;
+top: 1818px;
+left: 250px;
+}
+#projects{
+  Width:932px;
+Height:337px;
+Top:2541px;
+
+Left:2541px;
+}
+
+#contact{
+  Width:932px;
+Height:337px;
+Top:4572px;
+margin-top:10rem;
+Left:535px;
+}
+form{
+  display: flex;
+  flex-direction: column;
+  
+}
+ form label,input{
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+#Testimonials img{
+  width:100%;
+  height: auto;
+}
+#contactForm{
+ DISPLAY: flex;
+ flex-direction: row;
+ gap: 1rem;
+ align-items: center;
+}
+#contactForm input[type="email"] {
+  width: 627px;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 14px;
+  font-size: 1rem;
+}
+#contactForm input[type="submit"] {
+    width: 222px;
+  padding: 0.5rem;
+  border: 1px solid #f77f00;
+  border-radius: 14px;
+  background-color: #f77f00;
+  color: #fff;
+  font-size: 1rem;
+}
+#socialMedia{
+  display: flex;
+gap: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+#socialMedia img{
+  width: 2rem;
+}
+#socialMedia h1{
+  display: inline-block;
+  opacity: 0.5;
+}
+/* Custom CSS for Bootstrap Integration */
+#projects {
+    background-color: #1a1a1a !important;
+}
+
+.bg-secondary {
+    background-color: #2a2a2a !important;
+}
+
+#projectButton {
+    border-color: #444;
+    color: #f0f0f0;
+    transition: all 0.3s ease;
+}
+
+#projectButton.active {
+    background-color: #ff6347; /* Orange color */
+    border-color: #ff6347;
+    color: white;
+}
+
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+#projects.hide {
+    display: none;
+}
