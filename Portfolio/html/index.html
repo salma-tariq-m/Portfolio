@@ -10,7 +10,6 @@
     <meta http-equiv="refresh" content="">
     <link rel="shortcut icon" href="../imgs/monImg.jpeg" type="image/x-icon">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="../js/port.js"></script>
 </head>
 
 <body>
@@ -30,31 +29,34 @@
             <li class="nav-item"><a class="nav-link" href="#about"> About</a></li>
             <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
             <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-             <li class="nav-item"><a class="nav-link" href="#Testimonials"> Testimonials</a></li>
-
             <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-            <li class="nav-item"><button heref="../cv/Mon Cv">Download CV</button></li>
+            <li class="nav-item">
+                <button ><a class="nav-link"  id="download" href="../cv/MonCv.pdf" download="Mon cv " >Download Mon Cv</a></button>
+                
+            </li>
         </ul>
         </nav>
         </div>
         </div>
     </header>
     <section class="container" id="home">
-        <div class="row">
+        <div class="row " id="textHome">
             <div class="col-md-7">
-                <p>Hi I am</p>
-                <span>Salma Tariq</span>
-                <h1 > Full-stack </h1>
-                <h1 >Developper </h1>
+               <div class="text">
+                I´m
+    <span id="typewriter-text"></span>
+    </div>
             <p>
                 I'm salma tariq, I'm passionate about building innovative solutions at the intersection of web . I thrive on the challenge of creating seamless and powerful applications, from front-end user interfaces to back-end systems that interact with physical hardware.
             </p>
             <a href="#contact" class="btn btn-primary ">Hire Me</a>
             </div>
        
-        <div class="col-md-5 " id="containerImg">
-        <img src="../imgs/monImg.jpeg" alt="Profile Image"class="rounded-circle img-fluid" id="monImg">
-        </div>
+        <div class="image-border-container col">
+    <img src="../imgs/profile.png" alt="Description of your image">
+</div>
+       
+</div>
         
         </div>
     </section>
@@ -66,10 +68,11 @@
         <div class="col-md-7">
             <div >
             <h1>About Me</h1>
-            <p>As a full-stack developer, I have a deep understanding of both front-end and back-end technologies. I'm proficient in HTML, CSS, JavaScript, and various front-end frameworks like React and Angular. On the back-end, I have expertise in languages like Python, Node.js, and PHP, and I'm well-versed in database management using SQL and NoSQL databases.
+            <p>As a full-stack developer, I have a deep understanding of both front-end and back-end technologies. I'm proficient in HTML, CSS, JavaScript, and various front-end frameworks like React and Bootstrap. On the back-end, I have expertise in language PHP and the framework Laravel,
+                 and I'm well-versed in database management using SQL and NoSQL databases.
             </p>
         </div>
-        <form action=""> 
+        <!-- <form action=""> 
             <label for="">UX</label>
             <input type="range" name="" id="" min="0" max="100" value="65">
             <label for="">WebSite Desing</label>
@@ -80,7 +83,7 @@
             <label for="">Graphic Desing</label>
             <input type="range" min="0" max="100" value="80">
             
-        </form>
+        </form> -->
         </div>
         </div>
     </section>
@@ -165,49 +168,7 @@
             </div>
     </div>
 </section>
-    <section class="container mt-5" id="Testimonials">
-        <h1>Testimonials</h1>
-        <div id="demo" class="carousel slide" data-bs-ride="carousel">
-
- 
-
-  
-  
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <div class="card">
-        <div class="card-body">
-            
-          <p class="card-text"><span>"</span> I had the pleasure of working with Salma on a recent project, and I must say, she exceeded my expectations. Her attention to detail, creativity, and technical expertise are truly commendable. I highly recommend Salma for any web development or design project.<span>"</span> </p>
-          <h5 class="card-title">John Doe</h5>
-        </div>
-
-      </div>
-    </div>
-    <div class="carousel-item">
-    <div class="card">
-        <div class="card-body">
-          <p class="card-text"><span>"</span> I had the pleasure of working with Salma on a recent project, and I must say, she exceeded my expectations. Her attention to detail, creativity, and technical expertise are truly commendable. I highly recommend Salma for any web development or design project.<span>"</span> </p>
-          <h5 class="card-title">salma</h5>
-        </div>
-      </div>
-    </div>
-    <div class="carousel-item">
-     <div class="card">
-        <div class="card-body">
-            
-          <p class="card-text"> <span>"</span> I had the pleasure of working with Salma on a recent project, and I must say, she exceeded my expectations. Her attention to detail, creativity, and technical expertise are truly commendable. I highly recommend Salma for any web development or design project.<span>"</span></p>
-          <h5 class="card-title">John Doe</h5>
-        </div>
-    </div>
-  </div>
-</div>
-<div class="carousel-indicators bg-black ">
-    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active" ></button>
-    <button type="button" data-bs-target="#demo" data-bs-slide-to="1" ></button>
-    <button type="button" data-bs-target="#demo" data-bs-slide-to="2" ></button>
-  </div>
-    </section> 
+     
    <section class="container " id="contact">
     <h1 class="mb-5">Lets Design together</h1>
     <form action="" id="contactForm"> 
@@ -225,9 +186,22 @@
   </section>
  
   <Footer class="container mt-5 text-center">
+    <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="#home"> Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#about"> About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+            <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            <li class="nav-item">
+                <button ><a class="nav-link"  id="download" href="../cv/MonCv.pdf" download="Mon cv " >Download Mon Cv</a></button>
+                
+            </li>
+        </ul>
     <p >&copy; 2025 <span>Salma</span> All Rights Reserved,Inc.</p>
   </Footer>
 
 
 </body>
+    <script src="../js/ecriture.js"></script>
+
 </html>
