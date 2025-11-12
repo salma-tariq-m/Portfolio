@@ -1,11 +1,11 @@
 #  Mon Portfolio
 ##  Auteur
-    **Salma Tariq**  
+    SALMA TARIQ
     Étudiante en Développement Digital (option Full-Stack)  
      [LinkedIn](https://www.linkedin.com/in/salma-tariq-dev) | [GitHub](https://github.com/salma-tariq-m)
 
 ##  Description
-    Ce projet est un portfolio personnel réalisé avec **HTML**, **CSS**, **Bootstrap**, et **JavaScript**.  
+    Ce projet est un portfolio personnel réalisé avec HTML, CSS, Bootstrap, et JavaScript.  
     Il présente mes compétences, mes projets réalisés ainsi que mes coordonnées de contact.  
     L’objectif est de montrer mes capacités en développement web à travers une interface moderne et responsive.
 
