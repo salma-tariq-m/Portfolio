@@ -15,6 +15,11 @@ body {
 h2{
     color:rgb(253, 166, 181) ;
 }
+img[alt="my profile"]{
+    box-shadow: 0px 0px 20px  rgb(253, 166, 181),
+    0px 0px 40px  rgb(253, 166, 181),
+    0px 0px 50px  rgb(253, 166, 181);
+}
 /* hader */
 header{
     background-color: rgb(253, 166, 181);
@@ -32,14 +37,17 @@ ul li a{
     border-radius: 2rem;
 }
 ul a:hover {
-    text-decoration: underline;
-    background-color: pink;
-    transform: translateY(-1rem);
+    background-color: rgb(212, 136, 149);
+    transform: translateY(-10px);
 }
 #logo{
     margin-left: 3rem;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 30px;
+}
+#navbarNav{
+    background-color: rgb(253, 166, 181);
+    width: 100px;
 }
 /* homw */
 #home h2 span{
@@ -57,7 +65,7 @@ p{
 #home button:hover{
     background-color: pink;
 }
-a{
+#home button a{
     text-decoration: none;
     color: white;
 }
@@ -72,12 +80,11 @@ a{
 #icons div:hover{
     border-radius: 50%;
     background-color: pink;
-     transform: translateY(-10px)
+     transform: translateY(-5px)
 }
 /* about */
-img[alt="mon img"]{
-    width: 400px;
-    height: 300px;
+#about{
+    text-align: center;
 }
 /* services */
 #services{
