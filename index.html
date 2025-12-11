@@ -3,24 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-   <title>Portfolio - Salma Tariq</title>
-    <link rel="stylesheet" href="./css/styletest.css">
+    <title>Portfolio - Salma Tariq</title>
     <meta http-equiv="refresh" content="">
     <link rel="shortcut icon" href="./imgs/monImg.jpeg" type="image/x-icon">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-</head>
-<body>
+<link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
 <body>
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark ">
         <div class="container-fluid">
-            <h1 class="navbar-brand " id="logo">ST</h1>
+            <h1 class="navbar-brand " id="logo">MY <span>Portfolio</span></h1>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
         <div class="collapse navbar-collapse" id="navbarNav" >
-        
         <ul class="navbar-nav ms-auto" >
             <li class="nav-item"><a class="nav-link" href="#home"> Home</a></li>
             <li class="nav-item"><a class="nav-link" href="#about"> About</a></li>
@@ -28,15 +25,15 @@
             <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
             <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
         </ul>
+        </div>
+        </div>
         </nav>
-        </div>
-        </div>
     </header>
-    <section class="container" id="home">
-        <div class="row align-items-center" >
-           <div class="image-border-container col-md-5 ">
+     <section class="container" id="home">
+        <div class="row" >
+           <div class="col-md-3">
             <img src="./imgs/my profile.jpeg" alt="my profile">
-        </div>
+          </div>
         <div class="col-md-7 " id="textHome ">
                 <div class=" d-flex flex-column mb-5 ">
                     <h2 >I´m Salma Tariq</h2>
@@ -45,49 +42,57 @@
                  I'm passionate about building innovative solutions at the intersection of web . I thrive on the challenge of creating seamless and powerful applications, from front-end user interfaces to back-end systems that interact with physical hardware.
                 </p>
                 <div class="d-flex mb-5" id="icons">
-                    <div>
+                    <div class="mx-2">
                         <a href="mailto:salma.tariq.dev@gmail.com">
                             <svg width="25" height="25" viewBox="0 0 24 24" fill="currentColor">
                             <path d="M2 6.5A2.5 2.5 0 0 1 4.5 4h15A2.5 2.5 0 0 1 22 6.5v11A2.5 2.5 0 0 1 19.5 20h-15A2.5 2.5 0 0 1 2 17.5v-11zM4.5 6 12 11l7.5-5H4.5z"/>
                             </svg>
                         </a>
                     </div>
-                    <div>
+                    <div  class="mx-2">
                         <a href="tel:+212 601958661">
                         <svg width="25" height="25" viewBox="0 0 24 24" fill="currentColor">
                             <path d="M6.6 10.2a15.05 15.05 0 0 0 7.2 7.2l1.8-1.8a1 1 0 0 1 1.05-.24c1.16.46 2.42.71 3.75.71a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1C8.06 21 3 15.94 3 9a1 1 0 0 1 1-1h2.5a1 1 0 0 1 1 1c0 1.33.25 2.59.71 3.75.12.28.04.6-.24 1.05L6.6 10.2z"/>
                         </svg>
                         </a>
                     </div>
-                    <div>
+                    <div  class="mx-2">
                         <a href="www.linkedin.com/in/salma-tariq-dev" target="_blank">
                         <svg width="25" height="25" viewBox="0 0 24 24" fill="currentColor">
                             <path d="M4.98 3.5A2.5 2.5 0 1 1 4.98 8.5 2.5 2.5 0 0 1 4.98 3.5zM3 9h4v12H3zM9 9h3.8v1.6h.1c.5-.9 1.7-1.8 3.5-1.8 3.7 0 4.4 2.4 4.4 5.5V21H18v-5.1c0-1.2 0-2.8-1.7-2.8-1.7 0-2 1.4-2 2.7V21H9z"/>
                         </svg>
                         </a>
                     </div>
-                    <div>
+                    <div  class="mx-2">
                         <a href="https://github.com/salma-tariq-m" target="_blank">
                         <svg width="25" height="25" viewBox="0 0 24 24" fill="currentColor">
                             <path d="M12 .5a12 12 0 0 0-3.79 23.4c.6.1.82-.26.82-.58v-2.2c-3.34.73-4.04-1.6-4.04-1.6-.55-1.4-1.34-1.77-1.34-1.77-1.1-.75.08-.74.08-.74 1.2.08 1.83 1.24 1.83 1.24 1.08 1.84 2.83 1.31 3.52 1 .11-.78.42-1.31.76-1.61-2.66-.3-5.46-1.33-5.46-5.93 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.52.12-3.17 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.28-1.55 3.29-1.23 3.29-1.23.66 1.65.24 2.87.12 3.17.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.62-5.49 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.69.83.57A12 12 0 0 0 12 .5z"/>
                         </svg>
                         </a>
                     </div>
-                    </div>
-                <button class="p-2" ><a id="download" href="./cv/MonCv.pdf" download="Mon cv " >Download Mon Cv</a></button>
-
                 </div>
-                
-            </div>
-       
-</div>
-        
+                <button class="p-2" ><a id="download" href="./cv/MonCv.pdf" download="Mon cv " >Download Mon Cv</a></button>
+                </div>
+        </div>
         </div>
     </section>
     <section class="container  mt-5 " id="about">
           <h2 class="text-center mb-5">About Me</h2>
           <p>As a full-stack developer, I have a deep understanding of both front-end and back-end technologies. I'm proficient in HTML, CSS, JavaScript, and various front-end frameworks like React and Bootstrap. On the back-end, I have expertise in language PHP and the framework Laravel,
                  and I'm well-versed in database management using SQL and NoSQL databases.</p>
+          
+  <div class="tech-slider">
+    <div class="tech-track">
+      <img src="./imgs/html5.svg"alt="HTML">
+      <img src="css.png" alt="CSS">
+      <img src="js.png" alt="JavaScript">
+      <img src="php.png" alt="PHP">
+      <img src="mysql.png" alt="MySQL">
+      <img src="react.png" alt="React">
+      <img src="node.png" alt="Node.js">
+    </div>
+  </div>
+
     </section>
     <section id="services" class="py-5 container">
   <div class="container">
@@ -177,22 +182,21 @@
    <section class="container " id="contact">
     <h2 class="mb-5 text-center" >Lets Design together</h2>
     <form action="" id="contactForm"> 
-        <input type="email" placeholder="Enter your Email" name="email" class="mb-3">
-        <textarea name="" id="" rows="3" placeholder="write your message" class="mb-3"></textarea>
-        <input type="submit" value="Contact me" >
+        <input type="email" placeholder="Enter your Email" id="email" name="email" class="form-control mb-3">
+        <textarea name="" id="message" rows="3" placeholder="write your message" class="form-control mb-3"></textarea>
+        <input type="submit" value="Contact me"  class="btn btn-primary btnContact">
     </form>
   </section> 
-  <Footer >
-    <ul >
-        <li ><a  href="#home"> Home</a></li>
-        <li ><a  href="#about"> About</a></li>
-        <li ><a  href="#services">Services</a></li>
-        <li ><a  href="#projects">Projects</a></li>
-        <li ><a  href="#contact">Contact</a></li>
-        <li ><a class="nav-link"  id="download" href="../cv/MonCv.pdf" download="Mon cv " >Download Mon Cv</a></li>
-        </ul>
-    <p >&copy; <span><script>document.write(new Date().getFullYear()); </script></span>  Salma Tariq </p>
-  </Footer>
+  
+    <footer>
+      <p >&copy; <span><script>document.write(new Date().getFullYear()); </script></span>  Salma Tariq </p>
+    </footer>
 </body>
-    <script src="../js/ecriture.js"></script>
+<script type="text/javascript" src="https://cdn.emailjs.com/sdk/3.2/email.min.js"></script>
+<script type="text/javascript">
+   emailjs.init("wuBRO73qOZ7Rgdbsr"); 
+</script>
+<script src="../js/jsfile.js"></script>
+
+
 </html>
