@@ -3,6 +3,7 @@
   --main-color: #ff4dd3;
   --second-color:white;
   --padding-section: 60px;
+  --margin-for-space:10%;
 }
 html {
   scroll-behavior: smooth;
@@ -21,8 +22,13 @@ body {
 p{
   color: var(--second-color);
 }
+#home, #about, #services, #contact {
+  padding-top: 120px; /* باش ما يدخلش تحت الهيدر */
+  margin-bottom: 80px; /* مسافة بين السّكسيونات */
+}
 /* header */
 header {
+  height: 100px;
   position: fixed;  
   top: 0;            
   left: 0;           
@@ -30,6 +36,7 @@ header {
   background-color: black;  
   z-index: 1;
   box-shadow: 0 2px 6px var(--main-color); 
+  padding: 20px;
 }
 #logo span{
    color: var(--main-color);
@@ -42,8 +49,16 @@ ul li{
 }
 /* home */
 img{
-  width: 100%;
+width: 100%;
   height: auto;
+  border-radius: 50%;
+  display: block;
+  margin: auto;
+}
+.containerImg{
+  border-radius: 50%;
+  box-shadow: 0 0 20px var(--main-color),0 0 20px var(--main-color),0 0 20px var(--main-color);
+  margin-left: 5rem;
 }
 /* about */
 .tech-slider {

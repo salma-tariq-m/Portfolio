@@ -6,7 +6,8 @@
     <title>Portfolio - Salma Tariq</title>
     <meta http-equiv="refresh" content="">
     <link rel="shortcut icon" href="./imgs/monImg.jpeg" type="image/x-icon">
-<link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/style.css">
   </head>
 <body>
@@ -31,10 +32,7 @@
     </header>
      <section class="container" id="home">
         <div class="row" >
-           <div class="col-md-3">
-            <img src="./imgs/my profile.jpeg" alt="my profile">
-          </div>
-        <div class="col-md-7 " id="textHome ">
+        <div class="col-md-7 mr-3" id="textHome ">
                 <div class=" d-flex flex-column mb-5 ">
                     <h2 >I´m Salma Tariq</h2>
                 <h2>And I´m <span id="typewriter-text"></span></h2>
@@ -74,125 +72,125 @@
                 <button class="p-2" ><a id="download" href="./cv/MonCv.pdf" download="Mon cv " >Download Mon Cv</a></button>
                 </div>
         </div>
+        <div class="col-md-4  containerImg">
+          <img src="./imgs/my profile.jpeg" alt="my profile">
+        </div>
         </div>
     </section>
-    <section class="container  mt-5 " id="about">
+    <section class="container mt-5" id="about">
           <h2 class="text-center mb-5">About Me</h2>
           <p>As a full-stack developer, I have a deep understanding of both front-end and back-end technologies. I'm proficient in HTML, CSS, JavaScript, and various front-end frameworks like React and Bootstrap. On the back-end, I have expertise in language PHP and the framework Laravel,
-                 and I'm well-versed in database management using SQL and NoSQL databases.</p>
-          
-  <div class="tech-slider">
-    <div class="tech-track">
-      <img src="./imgs/html5.svg"alt="HTML">
-      <img src="css.png" alt="CSS">
-      <img src="js.png" alt="JavaScript">
-      <img src="php.png" alt="PHP">
-      <img src="mysql.png" alt="MySQL">
-      <img src="react.png" alt="React">
-      <img src="node.png" alt="Node.js">
+                 and I'm well-versed in database management using SQL and NoSQL databases.</p>    
+        <div class="tech-slider">
+          <div class="tech-track">
+            <img src="./imgs/html5.svg"alt="HTML">
+            <img src="css.png" alt="CSS">
+            <img src="js.png" alt="JavaScript">
+            <img src="php.png" alt="PHP">
+            <img src="mysql.png" alt="MySQL">
+            <img src="react.png" alt="React">
+            <img src="node.png" alt="Node.js">
+          </div>
+        </div>
+    </section>
+    <section id="services" class=" container">
+  <div class="container">
+      <h2 class="fw-bold text-pink text-center mb-5">My Services</h2>
+
+    <div class="row g-4">
+  <!-- Front-End -->
+  <div class="col-md-6 col-lg-4">
+    <div class="card h-100 text-center border-0 shadow-sm p-4">
+      <div class="mb-3 fs-1 text-danger">
+        <i class="bi bi-laptop"></i>
+      </div>
+      <h5 class="fw-bold text-danger">Front-End Development</h5>
+      <p class="text-muted small">
+        Creating modern and responsive interfaces using HTML, CSS, Bootstrap,JavaScript, and react.
+      </p>
     </div>
   </div>
 
-    </section>
-    <section id="services" class="py-5 container">
-  <div class="container">
-      <h2 class="fw-bold text-pink text-center mb-5">Mes Services</h2>
-
-    <div class="row g-4">
-      <!-- Front-End -->
-      <div class="col-md-6 col-lg-4">
-        <div class="card h-100 text-center border-0 shadow-sm p-4">
-          <div class="mb-3 fs-1 text-danger">
-            <i class="bi bi-laptop"></i>
-          </div>
-          <h5 class="fw-bold text-danger">Développement Front-End</h5>
-          <p class="text-muted small">
-            Création d’interfaces modernes et responsives avec HTML, CSS, Bootstrap et JavaScript.
-          </p>
-        </div>
+  <!-- Back-End -->
+  <div class="col-md-6 col-lg-4">
+    <div class="card h-100 text-center border-0 shadow-sm p-4">
+      <div class="mb-3 fs-1 text-pink">
+        <i class="bi bi-server"></i>
       </div>
-
-      <!-- Back-End -->
-      <div class="col-md-6 col-lg-4">
-        <div class="card h-100 text-center border-0 shadow-sm p-4">
-          <div class="mb-3 fs-1 text-pink">
-            <i class="bi bi-server"></i>
-          </div>
-          <h5 class="fw-bold text-pink">Développement Back-End</h5>
-          <p class="text-muted small">
-            Réalisation de la partie serveur avec PHP et MySQL selon le modèle MVC.
-          </p>
-        </div>
-      </div>
-
-      <!-- API / Web Services -->
-      <div class="col-md-6 col-lg-4">
-        <div class="card h-100 text-center border-0 shadow-sm p-4">
-          <div class="mb-3 fs-1 text-danger">
-            <i class="bi bi-link-45deg"></i>
-          </div>
-          <h5 class="fw-bold text-danger">API & Web Services</h5>
-          <p class="text-muted small">
-            Création d’API RESTful pour connecter votre application à d’autres systèmes.
-          </p>
-        </div>
-      </div>
-
-      <!-- Base de données -->
-      <div class="col-md-6 col-lg-4">
-        <div class="card h-100 text-center border-0 shadow-sm p-4">
-          <div class="mb-3 fs-1 text-pink">
-            <i class="bi bi-database"></i>
-          </div>
-          <h5 class="fw-bold text-pink">Gestion de Base de Données</h5>
-          <p class="text-muted small">
-            Conception et optimisation de bases de données MySQL fiables et performantes.
-          </p>
-        </div>
-      </div>
-
-      <!-- Git / Collaboration -->
-      <div class="col-md-6 col-lg-4">
-        <div class="card h-100 text-center border-0 shadow-sm p-4">
-          <div class="mb-3 fs-1 text-danger">
-            <i class="bi bi-git"></i>
-          </div>
-          <h5 class="fw-bold text-danger">Versioning & Collaboration</h5>
-          <p class="text-muted small">
-            Utilisation de Git, GitHub et GitLab pour le travail collaboratif et le déploiement.
-          </p>
-        </div>
-      </div>
-
-      <!-- Sites dynamiques -->
-      <div class="col-md-6 col-lg-4">
-        <div class="card h-100 text-center border-0 shadow-sm p-4">
-          <div class="mb-3 fs-1 text-pink">
-            <i class="bi bi-globe"></i>
-          </div>
-          <h5 class="fw-bold text-pink">Sites Web Dynamiques</h5>
-          <p class="text-muted small">
-            Création de sites complets, performants et adaptés à vos besoins avec un design moderne.
-          </p>
-        </div>
-      </div>
+      <h5 class="fw-bold text-pink">Back-End Development</h5>
+      <p class="text-muted small">
+        Building server-side functionalities using PHP and Laravel.
+      </p>
     </div>
+  </div>
+
+  <!-- API / Web Services -->
+  <div class="col-md-6 col-lg-4">
+    <div class="card h-100 text-center border-0 shadow-sm p-4">
+      <div class="mb-3 fs-1 text-danger">
+        <i class="bi bi-link-45deg"></i>
+      </div>
+      <h5 class="fw-bold text-danger">API & Web Services</h5>
+      <p class="text-muted small">
+        Developing RESTful APIs to connect your application with other systems.
+      </p>
+    </div>
+  </div>
+
+  <!-- Database -->
+  <div class="col-md-6 col-lg-4">
+    <div class="card h-100 text-center border-0 shadow-sm p-4">
+      <div class="mb-3 fs-1 text-pink">
+        <i class="bi bi-database"></i>
+      </div>
+      <h5 class="fw-bold text-pink">Database Management</h5>
+      <p class="text-muted small">
+        Designing and optimizing reliable, high-performance MySQL databases.
+      </p>
+    </div>
+  </div>
+
+  <!-- Git / Collaboration -->
+  <div class="col-md-6 col-lg-4">
+    <div class="card h-100 text-center border-0 shadow-sm p-4">
+      <div class="mb-3 fs-1 text-danger">
+        <i class="bi bi-git"></i>
+      </div>
+      <h5 class="fw-bold text-danger">Versioning & Collaboration</h5>
+      <p class="text-muted small">
+        Using Git, GitHub, and GitLab for collaborative work and deployment.
+      </p>
+    </div>
+  </div>
+
+  <!-- Dynamic Websites -->
+  <div class="col-md-6 col-lg-4">
+    <div class="card h-100 text-center border-0 shadow-sm p-4">
+      <div class="mb-3 fs-1 text-pink">
+        <i class="bi bi-globe"></i>
+      </div>
+      <h5 class="fw-bold text-pink">Dynamic Websites</h5>
+      <p class="text-muted small">
+        Building complete, high-performance websites tailored to your needs with a modern design.
+      </p>
+    </div>
+  </div>
+</div>
+
   </div>
 </section>     
    <section class="container " id="contact">
     <h2 class="mb-5 text-center" >Lets Design together</h2>
     <form action="" id="contactForm"> 
-        <input type="email" placeholder="Enter your Email" id="email" name="email" class="form-control mb-3">
-        <textarea name="" id="message" rows="3" placeholder="write your message" class="form-control mb-3"></textarea>
+        <input type="email" placeholder="Enter your Email" id="email"  class="form-control mb-3">
+        <textarea  id="message" rows="3" placeholder="write your message" class="form-control mb-3"></textarea>
         <input type="submit" value="Contact me"  class="btn btn-primary btnContact">
     </form>
   </section> 
-  
     <footer>
       <p >&copy; <span><script>document.write(new Date().getFullYear()); </script></span>  Salma Tariq </p>
     </footer>
 </body>
-<script type="text/javascript" src="https://cdn.emailjs.com/sdk/3.2/email.min.js"></script>
 <script type="text/javascript">
    emailjs.init("wuBRO73qOZ7Rgdbsr"); 
 </script>
