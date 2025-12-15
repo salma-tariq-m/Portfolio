@@ -5,9 +5,6 @@
   --padding-section: 60px;
   --margin-for-space:10%;
 }
-html {
-  scroll-behavior: smooth;
-}
 *{
   margin: 0;
   padding: 0;
@@ -23,12 +20,11 @@ p{
   color: var(--second-color);
 }
 #home, #about, #services, #contact {
-  padding-top: 120px; /* باش ما يدخلش تحت الهيدر */
-  margin-bottom: 80px; /* مسافة بين السّكسيونات */
+  padding-top: 120px;
 }
 /* header */
 header {
-  height: 100px;
+  height: 80px;
   position: fixed;  
   top: 0;            
   left: 0;           
@@ -47,6 +43,16 @@ a {
 ul li{
   margin-right: 40px;
 }
+#navbarNav {
+  flex-grow: 0 !important;
+  transition: none !important;
+}
+#navbarNav.show {
+  background-color: var(--second-color);
+  padding: 10px;
+  border-radius: 10px;
+  width: 100px;
+}
 /* home */
 img{
 width: 100%;
@@ -58,7 +64,17 @@ width: 100%;
 .containerImg{
   border-radius: 50%;
   box-shadow: 0 0 20px var(--main-color),0 0 20px var(--main-color),0 0 20px var(--main-color);
-  margin-left: 5rem;
+  /* margin-left: 3rem; */
+}
+#buttonDow{
+  background-color: var(--main-color);
+  width: 10rem;
+  padding: 8px;
+  border-radius: 10px;
+}
+#buttonDow a{
+  text-decoration: none;
+  color: white !important;
 }
 /* about */
 .tech-slider {
@@ -86,7 +102,7 @@ width: 100%;
 }
 /* section contact */
 #contact{
-   max-width: 800px; /* never bigger than 200px */
+   max-width: 800px;
   min-width: 120px;
 }
 .btnContact{
@@ -98,4 +114,13 @@ width: 100%;
 footer{
   text-align: center;
 }
-
+/* animation */
+li a:hover , li a:focus{
+  background-color:#f57cd7;
+  border-radius: 10px;
+  color: white !important;
+  padding: 10px;
+}
+a:hover , #icons svg:hover{
+ transform: translateY(-10px);
+}
