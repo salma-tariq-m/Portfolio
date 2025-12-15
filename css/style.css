@@ -54,7 +54,7 @@ ul li{
   width: 100px;
 }
 /* home */
-img{
+.containerImg img{
 width: 100%;
   height: auto;
   border-radius: 50%;
@@ -85,12 +85,14 @@ width: 100%;
 .tech-track {
   display: flex;
   gap: 40px;
-  animation: slide 10s linear infinite; 
+  animation: slide 5s linear infinite; 
 }
 .tech-track img {
-  height: 100px;
+  border-radius: 25%;
+  height: 70px;
   width: auto;
   object-fit: contain;
+  box-shadow: 0px 8px 9px var(--second-color);
 }
 @keyframes slide {
   0% {

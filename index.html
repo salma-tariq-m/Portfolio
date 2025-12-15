@@ -85,13 +85,13 @@
                  and I'm well-versed in database management using SQL and NoSQL databases.</p>    
         <div class="tech-slider">
           <div class="tech-track">
-            <img src="./imgs/html5.svg"alt="HTML">
-            <img src="css.png" alt="CSS">
-            <img src="js.png" alt="JavaScript">
-            <img src="php.png" alt="PHP">
-            <img src="mysql.png" alt="MySQL">
-            <img src="react.png" alt="React">
-            <img src="node.png" alt="Node.js">
+            <img src="./imgs/html5.webp"alt="HTML">
+            <img src="./imgs/css3.webp" alt="CSS">
+            <img src="./imgs/js.webp" alt="JavaScript">
+            <img src="./imgs/php.webp" alt="PHP">
+            <img src="./imgs/mysql.webp" alt="MySQL">
+            <img src="./imgs/react.webp" alt="React">
+            <img src="./imgs/laravel.webp" alt="Laravel">
           </div>
         </div>
     </section>
@@ -193,10 +193,30 @@
       <p >&copy; <span><script>document.write(new Date().getFullYear()); </script></span>  Salma Tariq </p>
     </footer>
 </body>
-<script type="text/javascript">
-   emailjs.init("wuBRO73qOZ7Rgdbsr"); 
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+<script>
+(function(){
+  emailjs.init("wuBRO73qOZ7Rgdbsr");
+})();
+
+document.getElementById("contactForm").addEventListener("submit", function(e){
+    e.preventDefault();
+
+    const email = document.getElementById("email").value;
+    const message = document.getElementById("message").value;
+
+    emailjs.send("service_192m8pf", "template_x4lw4bt", {
+        from_email: email,
+        message: message
+    })
+    .then(function(response) {
+        document.getElementById("status").innerText = "Message sent successfully!";
+    }, function(error) {
+        document.getElementById("status").innerText = "Error sending message.";
+        console.log(error);
+    });
+});
 </script>
 <script src="../js/jsfile.js"></script>
-
-
 </html>

@@ -29,19 +29,18 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 });
 // for contact
-document.getElementById("contactForm").addEventListener("submit", function(e){
-    e.preventDefault();
+// document.getElementById("contactForm").addEventListener("submit", function(e){
+//     e.preventDefault();
+//     const email = document.getElementById("email").value;
+//     const message = document.getElementById("message").value;
 
-    const email = document.getElementById("email").value;
-    const message = document.getElementById("message").value;
-
-    emailjs.send("service_192m8pf","template_x4lw4bt", {
-        from_email: email,
-        message: message
-    })
-    .then(function(response) {
-        document.getElementById("status").innerText = "Message sent successfully!";
-    }, function(error) {
-        document.getElementById("status").innerText = "Error sending message.";
-    });
-});
+//     email.send("service_192m8pf","template_x4lw4bt", {
+//         from_email: email,
+//         message: message
+//     })
+//     .then(function(response) {
+//         document.getElementById("status").innerText = "Message sent successfully!";
+//     }, function(error) {
+//         document.getElementById("status").innerText = "Error sending message.";
+//     });
+// });
