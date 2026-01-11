@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="./css/style.css">
   </head>
 <body>
+  <!-- HEADER -->
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark ">
         <div class="container-fluid">
@@ -30,6 +31,7 @@
         </div>
         </nav>
     </header>
+    <!-- HOME -->
      <section class="container" id="home">
         <div class="row" >
         <div class="col-md-7 mr-3" id="textHome ">
@@ -75,10 +77,11 @@
                 </div>
         </div>
         <div class="col-md-4  containerImg">
-          <img src="./imgs/my profile.jpeg" alt="my profile">
+          <img src="./imgs/myImg.jpeg" alt="my profile">
         </div>
         </div>
     </section>
+    <!-- ABOUT -->
     <section class="container mt-5" id="about">
           <h2 class="text-center mb-5">About Me</h2>
           <p>As a full-stack developer, I have a deep understanding of both front-end and back-end technologies. I'm proficient in HTML, CSS, JavaScript, and various front-end frameworks like React and Bootstrap. On the back-end, I have expertise in language PHP and the framework Laravel,
@@ -95,6 +98,7 @@
           </div>
         </div>
     </section>
+    <!-- SECTION -->
     <section id="services" class=" container">
   <div class="container">
       <h2 class="fw-bold text-pink text-center mb-5">My Services</h2>
@@ -180,7 +184,8 @@
 </div>
 
   </div>
-</section>     
+</section>  
+<!-- CONATCT    -->
    <section class="container " id="contact">
     <h2 class="mb-5 text-center" >Lets Design together</h2>
     <form action="" id="contactForm"> 
@@ -189,12 +194,14 @@
         <input type="submit" value="Contact me"  class="btn btn-primary btnContact">
     </form>
   </section> 
+  <!-- FOOTER -->
     <footer>
       <p >&copy; <span><script>document.write(new Date().getFullYear()); </script></span>  Salma Tariq </p>
     </footer>
 </body>
+<!-- SCRIPT DE JS Bootstrap -->
 <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
-
+<!-- JS DE CONTACT (IL REST EN TEST) -->
 <script>
 (function(){
   emailjs.init("wuBRO73qOZ7Rgdbsr");
@@ -218,5 +225,6 @@ document.getElementById("contactForm").addEventListener("submit", function(e){
     });
 });
 </script>
+<!-- SCRIPT D´ANNIMATION D´ESCTURE  -->
 <script src="../js/jsfile.js"></script>
 </html>
