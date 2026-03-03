@@ -12,12 +12,8 @@
 ---
 
 ##  Technologies utilisées
-    - HTML5  
-    - CSS3  
-    - Bootstrap 5  
-    - JavaScript  
-    - PHP (si backend utilisé)  
-    - SQL (si base de données utilisée)
+    - react
+    -framer-motion library
 
 ---
 
