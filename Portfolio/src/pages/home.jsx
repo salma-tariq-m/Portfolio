@@ -50,7 +50,7 @@ export default function Home(){
                     </div>
                 </div>
                 <div id="buttonDow">
-                  <a id="download" href="./cv/CV_Salma_Tariq_Stage_FullStack.pdf" download="Mon cv " >Download Mon Cv</a>
+                  <a id="download" href="./" download="Mon cv " >Download Mon Cv</a>
                 </div>
                 </div>
         </div>
