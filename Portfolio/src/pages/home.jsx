@@ -50,8 +50,9 @@ export default function Home(){
                     </div>
                 </div>
                 <div id="buttonDow">
-                  <a id="download" href="./" download="Mon cv " >Download Mon Cv</a>
-                </div>
+                    <a id="download" href="/cv/CV_Salma_Tariq_Stage_FullStack.pdf" download="CV_Salma_Tariq_Stage_FullStack.pdf">
+                    Download Mon Cv
+                    </a>                </div>
                 </div>
         </div>
         <div className="col-md-4  containerImg">
